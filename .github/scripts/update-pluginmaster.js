@@ -122,6 +122,35 @@ function getLatestDownloadLink(releases) {
 }
 
 /**
+ * Get the version from the latest release
+ * @param {Array} releases - Array of release objects
+ * @returns {string | null}
+ */
+function getLatestVersion(releases) {
+  if (!releases || releases.length === 0) {
+    return null;
+  }
+
+  // Find the latest release (releases are typically sorted by date, newest first)
+  const latestRelease = releases[0];
+
+  if (!latestRelease.tag_name) {
+    return null;
+  }
+
+  // Remove 'v' prefix if present (e.g., "v1.1.0" -> "1.1.0")
+  let version = latestRelease.tag_name.replace(/^v/, '');
+
+  // Ensure version has 4 parts for AssemblyVersion (e.g., "1.1.0" -> "1.1.0.0")
+  const parts = version.split('.');
+  while (parts.length < 4) {
+    parts.push('0');
+  }
+
+  return parts.join('.');
+}
+
+/**
  * Main function to update download counts and changelogs
  */
 async function main() {
@@ -170,9 +199,23 @@ async function main() {
     if (latestDownloadLink) {
       plugin.DownloadLinkInstall = latestDownloadLink;
       plugin.DownloadLinkUpdate = latestDownloadLink;
-      console.log(`  ${plugin.Name}: ${downloadCount} downloads, changelog and download links updated`);
+    }
+
+    // Update AssemblyVersion from latest release
+    const latestVersion = getLatestVersion(releases);
+    if (latestVersion) {
+      plugin.AssemblyVersion = latestVersion;
+    }
+
+    // Log update results
+    if (latestDownloadLink && latestVersion) {
+      console.log(`  ${plugin.Name}: ${downloadCount} downloads, version ${latestVersion}, changelog and download links updated`);
+    } else if (latestDownloadLink) {
+      console.log(`  ${plugin.Name}: ${downloadCount} downloads, changelog and download links updated (no version found)`);
+    } else if (latestVersion) {
+      console.log(`  ${plugin.Name}: ${downloadCount} downloads, version ${latestVersion}, changelog updated (no download link found)`);
     } else {
-      console.log(`  ${plugin.Name}: ${downloadCount} downloads, changelog updated (no download link found)`);
+      console.log(`  ${plugin.Name}: ${downloadCount} downloads, changelog updated`);
     }
   }
 
