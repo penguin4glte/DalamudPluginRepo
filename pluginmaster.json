@@ -21,6 +21,6 @@
 		"DownloadLinkTesting": "https://github.com/penguin4glte/AutoRetainerSellList/releases/download/1.0.0/latest.zip",
 		"DownloadLinkUpdate": "https://github.com/penguin4glte/AutoRetainerSellList/releases/download/1.1.1/latest.zip",
 		"Changelog": "### Added\r\n- Chat log language setting in the settings window\r\n  - Users can now choose between Japanese and English for chat log messages\r\n  - Language selector is located at the top of the settings window\r\n  - Default language is Japanese to maintain backward compatibility\r\n  - All chat messages (item listing, errors, status updates) are now localized\r\n\r\n**Full Changelog**: https://github.com/penguin4glte/AutoRetainerSellList/compare/1.1.0...1.1.1",
-		"DownloadCount": 17
+		"DownloadCount": 18
 	}
 ]
