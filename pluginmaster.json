@@ -21,6 +21,6 @@
 		"DownloadLinkTesting": "https://github.com/penguin4glte/AutoRetainerSellList/releases/download/1.0.0/latest.zip",
 		"DownloadLinkUpdate": "https://github.com/penguin4glte/AutoRetainerSellList/releases/download/1.2.0/latest.zip",
 		"Changelog": "## Changes\r\n- Add Dalamud v15 support\r\n- Update ECommons to latest version (fixes breaking changes in FFXIVClientStructs)\r\n\r\n**Full Changelog**: https://github.com/penguin4glte/AutoRetainerSellList/compare/1.1.1...1.2.0",
-		"DownloadCount": 42
+		"DownloadCount": 43
 	}
 ]
