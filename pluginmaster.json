@@ -20,7 +20,7 @@
 		"IsTestingExclusive": false,
 		"DownloadLinkTesting": "https://github.com/penguin4glte/AutoRetainerSellList/releases/download/1.0.0/latest.zip",
 		"DownloadLinkUpdate": "https://github.com/penguin4glte/AutoRetainerSellList/releases/download/1.2.1/latest.zip",
-		"Changelog": "## Changes\r\n- Update for latest Dalamud (API 15) and current game patch\r\n- Update ECommons to latest version\r\n\r\n**Full Changelog**: https://github.com/penguin4glte/AutoRetainerSellList/compare/1.2.0...1.2.1",
-		"DownloadCount": 44
+		"Changelog": "Update for latest Dalamud (API 15) and current game patch. Updated ECommons to latest master. Fixed assembly version generation.",
+		"DownloadCount": 47
 	}
 ]
