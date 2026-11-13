@@ -4,7 +4,7 @@
 		"Name": "Auto Retainer Sell List",
 		"Description": "Configure a list of items to maintain on sale at (lowest market price - 1 gil)",
 		"InternalName": "AutoRetainerSellList",
-		"AssemblyVersion": "1.2.1.0",
+		"AssemblyVersion": "1.2.2.0",
 		"RepoUrl": "https://github.com/penguin4glte/AutoRetainerSellList",
 		"ApplicableVersion": "any",
 		"Tags": [
@@ -15,12 +15,12 @@
 		"ImageUrls": [
 			""
 		],
-		"DownloadLinkInstall": "https://github.com/penguin4glte/AutoRetainerSellList/releases/download/1.2.1/latest.zip",
+		"DownloadLinkInstall": "https://github.com/penguin4glte/AutoRetainerSellList/releases/download/1.2.2/latest.zip",
 		"IsHide": false,
 		"IsTestingExclusive": false,
 		"DownloadLinkTesting": "https://github.com/penguin4glte/AutoRetainerSellList/releases/download/1.0.0/latest.zip",
-		"DownloadLinkUpdate": "https://github.com/penguin4glte/AutoRetainerSellList/releases/download/1.2.1/latest.zip",
-		"Changelog": "Update for latest Dalamud (API 15) and current game patch. Updated ECommons to latest master. Fixed assembly version generation.",
-		"DownloadCount": 94
+		"DownloadLinkUpdate": "https://github.com/penguin4glte/AutoRetainerSellList/releases/download/1.2.2/latest.zip",
+		"Changelog": "Fixed an issue where items could be listed above the lowest market price. The lowest price is now taken from all received listings (instead of assuming the first listing is the cheapest), market data for a different item is ignored, and the lowest listing and calculated selling price are logged for diagnosis.",
+		"DownloadCount": 104
 	}
 ]
