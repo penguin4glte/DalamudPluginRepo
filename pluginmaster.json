@@ -21,6 +21,6 @@
 		"DownloadLinkTesting": "https://github.com/penguin4glte/AutoRetainerSellList/releases/download/1.0.0/latest.zip",
 		"DownloadLinkUpdate": "https://github.com/penguin4glte/AutoRetainerSellList/releases/download/1.2.4/latest.zip",
 		"Changelog": "Fixed an issue where the selling price could still be higher than the lowest market listing. Market board listings are now read from the game's own data (the same data shown in the Search Result window) instead of Dalamud's offerings event, which could miss some batches including the cheapest listings. The plugin also no longer blocks the game while waiting for market board data. Debug logs now show how many listings were missing from the event.",
-		"DownloadCount": 114
+		"DownloadCount": 121
 	}
 ]
