@@ -21,6 +21,6 @@
 		"DownloadLinkTesting": "https://github.com/penguin4glte/AutoRetainerSellList/releases/download/1.0.0/latest.zip",
 		"DownloadLinkUpdate": "https://github.com/penguin4glte/AutoRetainerSellList/releases/download/1.2.6/latest.zip",
 		"Changelog": "Fixed wrong selling prices (higher than the actual lowest listing) when used together with Marketbuddy. Marketbuddy clicks \"Compare Prices\" automatically when the sell window opens, so two market board requests were sent for the same item; the second one reset the game's listing data and its response could be delayed or never arrive, and the price was then calculated from incomplete listings. The plugin now pauses Marketbuddy's automatic actions (via its IPC lock) while the automation is running, reuses a request that was already made for the open sell window instead of sending a second one, and waits until all listings have been received before calculating the price.",
-		"DownloadCount": 124
+		"DownloadCount": 128
 	}
 ]
